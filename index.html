@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Privacy Policy - Fx Global</title>
+    <meta name="description"
+          content="Privacy Policy for Fx Global Currency Converter.">
+
     <style>
         :root {
-            --bg-color: #05070b;
-            --card-bg: #0f172a;
-            --accent-color: #00adb5;
-            --text-main: #f3f4f6;
-            --text-muted: #9ca3af;
-            --border-color: #1e293b;
+            --bg: #05070b;
+            --card: #0f172a;
+            --card-dark: #0a1020;
+            --accent: #00e5d4;
+            --text: #f3f4f6;
+            --muted: #a7b0c0;
+            --border: #22304a;
         }
 
         * {
@@ -21,102 +26,92 @@
         }
 
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.8;
-            padding: 40px 20px;
+            min-height: 100vh;
+            padding: 32px 16px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.75;
         }
 
         .wrapper {
-            max-width: 850px;
-            margin: 0 auto;
+            max-width: 860px;
+            margin: auto;
         }
 
         .container {
-            background-color: var(--card-bg);
-            padding: 50px;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-            border: 1px solid var(--border-color);
+            padding: 48px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
         }
 
-        .header-section {
-            text-align: center;
-            margin-bottom: 40px;
-            border-bottom: 2px solid var(--border-color);
+        .header {
             padding-bottom: 30px;
+            margin-bottom: 34px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
         }
 
-        .app-badge {
+        .badge {
             display: inline-block;
-            background: rgba(0, 173, 181, 0.1);
-            color: var(--accent-color);
             padding: 6px 16px;
-            border-radius: 20px;
+            margin-bottom: 14px;
+            color: var(--accent);
+            border: 1px solid rgba(0, 229, 212, 0.35);
+            border-radius: 30px;
+            background: rgba(0, 229, 212, 0.08);
             font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
+            font-weight: bold;
             letter-spacing: 1px;
-            margin-bottom: 15px;
-            border: 1px solid rgba(0, 173, 181, 0.3);
+            text-transform: uppercase;
         }
 
         h1 {
-            color: var(--text-main);
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            color: var(--text);
+            font-size: 34px;
         }
 
-        .last-updated {
+        .effective-date {
+            color: var(--muted);
             font-size: 14px;
-            color: var(--text-muted);
         }
 
-        .content-block {
+        .section {
             margin-bottom: 30px;
         }
 
         h2 {
-            color: var(--accent-color);
-            font-size: 19px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            margin-bottom: 10px;
+            color: var(--accent);
+            font-size: 20px;
         }
 
         p {
-            color: var(--text-muted);
-            font-size: 15px;
             margin-bottom: 12px;
+            color: var(--muted);
+            font-size: 15px;
         }
 
         strong {
-            color: var(--text-main);
+            color: var(--text);
         }
 
-        .contact-box {
-            background: rgba(0, 0, 0, 0.3);
-            border-left: 4px solid var(--accent-color);
-            padding: 20px;
-            border-radius: 0 8px 8px 0;
-            margin-top: 20px;
+        ul {
+            padding-left: 24px;
+            margin: 10px 0 14px;
+            color: var(--muted);
+            font-size: 15px;
         }
 
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-            font-size: 13px;
-            color: var(--text-muted);
+        li {
+            margin-bottom: 6px;
         }
 
         a {
-            color: var(--accent-color);
+            color: var(--accent);
             text-decoration: none;
         }
 
@@ -124,71 +119,255 @@
             text-decoration: underline;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 25px;
+        .contact-box {
+            padding: 22px;
+            margin-top: 12px;
+            background: var(--card-dark);
+            border-left: 4px solid var(--accent);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .footer {
+            padding-top: 24px;
+            margin-top: 38px;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                padding: 16px 10px;
             }
+
+            .container {
+                padding: 26px 20px;
+                border-radius: 14px;
+            }
+
             h1 {
-                font-size: 26px;
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            ul {
+                font-size: 14px;
             }
         }
     </style>
 </head>
+
 <body>
+<div class="wrapper">
+    <main class="container">
 
-    <div class="wrapper">
-        <div class="container">
-            
-            <div class="header-section">
-                <div class="app-badge">Fx Global Official</div>
-                <h1>Privacy Policy</h1>
-                <div class="last-updated">Effective Date: August 28, 2026</div>
+        <header class="header">
+            <div class="badge">Fx Global Official</div>
+            <h1>Privacy Policy</h1>
+            <div class="effective-date">
+                Effective Date: November 1, 2026
             </div>
+        </header>
 
-            <div class="content-block">
-                <p>Welcome to <strong>Fx Global - Currency Converter</strong>. We respect your privacy and are committed to protecting any information related to your usage of our mobile application. This Privacy Policy outlines our practices regarding data privacy.</p>
-            </div>
+        <section class="section">
+            <p>
+                Welcome to <strong>Fx Global - Currency Converter</strong>.
+                This Privacy Policy explains how information may be processed
+                when you use the Fx Global Android application.
+            </p>
+        </section>
 
-            <div class="content-block">
-                <h2>1. Information Collection & Zero Data Tracking</h2>
-                <p>Our application is engineered with complete privacy in mind. <strong>We do not require user accounts, registrations, or logins.</strong> We do not collect, store, or transmit any personally identifiable information (PII) such as your name, phone number, physical address, or precise geographic location.</p>
-            </div>
+        <section class="section">
+            <h2>1. Information We Collect</h2>
 
-            <div class="content-block">
-                <h2>2. Network Access & Live Market Rates</h2>
-                <p>Fx Global connects to secure financial web services exclusively to fetch real-time global currency exchange rates. This network interaction is automated, transient, and transmits zero personal data or device trackers from your hardware.</p>
-            </div>
+            <p>
+                Fx Global does not require user accounts, registration, login,
+                name, phone number, physical address, or precise location.
+            </p>
 
-            <div class="content-block">
-                <h2>3. Local Storage & Offline Capabilities</h2>
-                <p>When operating offline or caching currency conversion templates, the app securely saves minimal configuration files locally inside your device’s private sandbox storage. This data never leaves your smartphone.</p>
-            </div>
+            <p>
+                The app does not intentionally collect or store personal
+                profile information directly. However, third-party services
+                used by the app may process technical information as described
+                below.
+            </p>
+        </section>
 
-            <div class="content-block">
-                <h2>4. Third-Party Frameworks</h2>
-                <p>To maintain high stability, performance, and crash analytics, the app utilizes standard development frameworks (such as Google Play Services). These tools may process basic, non-personal diagnostic metrics (like Android OS version or crash logs) governed independently by Google's privacy protocols.</p>
+        <section class="section">
+            <h2>2. Currency Rates and Network Requests</h2>
 
-                <h2>5. Children's Information</h2>
-                <p>Our utility app is universally safe and does not knowingly solicit or collect data from children under the age of 13.</p>
-            </div>
+            <p>
+                Fx Global connects to third-party currency-rate services to
+                retrieve exchange-rate information. These requests may be
+                processed by the service provider using standard technical
+                information such as IP address, device network information,
+                request time, and error diagnostics.
+            </p>
 
-            <div class="content-block">
-                <h2>6. Policy Updates</h2>
-                <p>We reserve the right to modify this Privacy Policy whenever necessary to align with functional upgrades or legal frameworks. Any revisions will immediately reflect on this hosted document with an updated effective date.</p>
-            </div>
+            <p>
+                Fx Global does not intentionally send your name, account
+                information, contacts, messages, photos, or precise location
+                to the currency-rate service.
+            </p>
+        </section>
 
-            <div class="contact-box">
-                <h2>7. Contact Support</h2>
-                <p>If you have inquiries, feedback, or concerns regarding our privacy standards while utilizing Fx Global, please reach out directly through email:</p>
-                <p><strong>Email:</strong> <a href="mailto:androidhub.official@gmail.com">androidhub.official@gmail.com</a></p>
-            </div>
+        <section class="section">
+            <h2>3. Advertising and Google Mobile Ads</h2>
 
-            <div class="footer">
-                &copy; 2026 Fx Global. All rights reserved. Designed for professional Android deployment.
-            </div>
+            <p>
+                Fx Global uses the Google Mobile Ads SDK, also known as AdMob,
+                to display banner advertisements and App Open advertisements.
+            </p>
 
-        </div>
-    </div>
+            <p>
+                Google and its advertising partners may process information
+                such as device information, advertising identifiers, IP
+                address, app and operating-system information, diagnostics,
+                ad impressions, and ad interaction data.
+            </p>
 
+            <p>
+                This information may be used to deliver, measure, secure, and
+                improve advertising. Depending on applicable laws, user
+                settings, and consent choices, advertisements may be
+                personalized or non-personalized.
+            </p>
+
+            <p>
+                More information is available in
+                <a href="https://policies.google.com/privacy"
+                   target="_blank"
+                   rel="noopener">
+                    Google's Privacy Policy
+                </a>.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>4. Local Storage</h2>
+
+            <p>
+                Fx Global may use limited local device storage for temporary
+                app settings, interface preferences, or cached rate data.
+                This information remains on your device and is not directly
+                stored by Fx Global on its own servers.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>5. Third-Party Services</h2>
+
+            <p>
+                The app uses third-party libraries and services for currency
+                rates, advertising, image loading, networking, and Android
+                app functionality. These providers may process technical data
+                according to their own privacy policies.
+            </p>
+
+            <p>
+                Fx Global does not control the independent privacy practices
+                of third-party providers. Users should review the policies
+                of those providers where appropriate.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>6. Children’s Privacy</h2>
+
+            <p>
+                Fx Global is a general-purpose utility application and is not
+                directed specifically toward children under 13. We do not
+                knowingly collect personal information from children.
+            </p>
+
+            <p>
+                If you believe that a child has provided personal information
+                through the app, please contact us so we can review the
+                matter.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>7. Data Retention and Deletion</h2>
+
+            <p>
+                Fx Global does not create user accounts and does not maintain
+                a personal user database. Therefore, there is no Fx Global
+                account to delete.
+            </p>
+
+            <p>
+                Technical and advertising data processed by third-party
+                providers is handled according to their own policies,
+                retention rules, and user controls.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>8. Security</h2>
+
+            <p>
+                We use reasonable technical measures to protect the app and
+                its communication. However, no internet transmission or
+                electronic storage system can be guaranteed to be completely
+                secure.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>9. Currency Information Disclaimer</h2>
+
+            <p>
+                Currency rates shown in Fx Global are provided for general
+                informational purposes. Rates may be delayed, inaccurate, or
+                different from rates offered by banks, exchanges, or financial
+                institutions.
+            </p>
+
+            <p>
+                Fx Global is not a financial, investment, banking, or
+                remittance service. Do not rely solely on this app for
+                financial decisions.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>10. Policy Updates</h2>
+
+            <p>
+                We may update this Privacy Policy when the app, advertising
+                services, third-party providers, or legal requirements change.
+                Any update will be published on this page with a revised
+                effective date.
+            </p>
+        </section>
+
+        <section class="section contact-box">
+            <h2>11. Contact Support</h2>
+
+            <p>
+                If you have questions or concerns about this Privacy Policy,
+                contact us at:
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:androidhub.official@gmail.com">
+                    androidhub.official@gmail.com
+                </a>
+            </p>
+        </section>
+
+        <footer class="footer">
+            © 2026 Fx Global. All rights reserved.
+        </footer>
+
+    </main>
+</div>
 </body>
 </html>
